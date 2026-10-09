@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A LITTLE PIECE OF MY HEART ♡</title>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+--pink:#ffd9e5;
+--blush:#fff0f5;
+--cream:#fffaf2;
+--white:#ffffff;
+--rose:#e96b9c;
+--text:#5f4856;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(to bottom,var(--blush),var(--cream));
+color:var(--text);
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+text-align:center;
+}
+
+.hero-card{
+background:white;
+padding:35px;
+border-radius:30px;
+max-width:600px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+color:var(--rose);
+}
+
+h1{
+font-size:2.5rem;
+margin-bottom:10px;
+}
+
+p{
+line-height:1.7;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:var(--rose);
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:70px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
+margin-bottom:20px;
+}
+
+.heart{
+position:fixed;
+top:-20px;
+font-size:20px;
+animation:fall linear forwards;
+pointer-events:none;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-card">
+
+<h1>A LITTLE PIECE OF MY HEART ♡</h1>
+
+<p>18 songs, countless feelings, and one person who inspired them all.</p>
+
+<p style="margin-top:10px;">
+a little surprise for my honeybunch. ♡
+</p>
+
+<a href="#note" class="btn">
+OPEN YOUR SURPRISE ♡
+</a>
+
+</div>
+
+</section>
+
+<section id="note">
+
+<h2 class="section-title">
+A LITTLE NOTE FOR YOU
+</h2>
+
+<div class="card">
+<p>
+Hi, my love. ♡
+
+I made this little website because I wanted to give you something personal for our first monthsary. Along with the playlist, I wanted a place where I could share little thoughts, reminders, and messages that come from my heart.
+
+Every song has a reason for being here. Some remind me of you, some remind me of us, and some simply capture feelings that are difficult to explain with ordinary words.
+
+I hope this tiny corner of the internet makes you smile.
+♡
+</p>
+</div>
+
+</section>
+
+<script>
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="♡";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(4+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,700);
+
+</script>
+<!-- OUR PLAYLIST ♡ -->
+<section id="playlist">
+
+  <h2 class="section-title">OUR LITTLE PLAYLIST 🎶</h2>
+
+  <div class="card">
+    <p style="text-align:center;">
+      18 songs, countless feelings, and one person who inspired them all. ♡
+    </p>
+
+    <div style="text-align:center;">
+      <a
+  href="https://open.spotify.com/playlist/1q5aH0gMWK7Gxix57RxFx7"
+  class="btn"
+  target="_blank"
+  rel="noopener noreferrer">
+  LISTEN TO OUR PLAYLIST ♡
+      </a>
+  
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h3>01. Best Part</h3>
+    <p>Daniel Caesar ft. H.E.R.</p>
+  </div>
+
+  <div class="card">
+    <h3>02. Nothing</h3>
+    <p>Bruno Major</p>
+  </div>
+
+  <div class="card">
+    <h3>03. Glue Song</h3>
+    <p>beabadoobee</p>
+  </div>
+
+  <div class="card">
+    <h3>04. Those Eyes</h3>
+    <p>New West</p>
+  </div>
+
+  <div class="card">
+    <h3>05. Palagi (TJxKZ Version)</h3>
+    <p>TJ Monterde, KZ Tandingan</p>
+  </div>
+
+  <div class="card">
+    <h3>06. You and Me</h3>
+    <p>Lifehouse</p>
+  </div>
+
+  <div class="card">
+    <h3>07. I'll Be</h3>
+    <p>Edwin McCain</p>
+  </div>
+
+  <div class="card">
+    <h3>08. Ikaw at Ako</h3>
+    <p>Johnoy Danao</p>
+  </div>
+
+  <div class="card">
+    <h3>09. I Like Me Better</h3>
+    <p>Lauv</p>
+  </div>
+
+  <div class="card">
+    <h3>10. Araw-Araw</h3>
+    <p>Ben&Ben</p>
+</div>
+
+</section>
+
+</body>
+  <!-- A JAR FULL OF LOVE ♡ -->
+<section id="love-jar">
+
+  <h2 class="section-title">A JAR FULL OF LOVE ♡</h2>
+
+  <div class="card" style="text-align:center;">
+
+    <p>
+      A little jar filled with reminders of how special you are to me.
+      Tap the button whenever you need a little love. ♡
+    </p>
+
+    <div style="font-size:80px; margin:20px 0;">
+      🫙💗
+    </div>
+
+    <p id="love-message" style="font-style:italic;">
+      Your little message is waiting here, my love. ♡
+    </p>
+
+    <button
+      class="btn"
+      onclick="newLoveMessage()"
+      style="border:none; cursor:pointer; font-family:inherit;">
+      PICK A LITTLE LOVE NOTE ♡
+    </button>
+
+  </div>
+
+</section>
+
+<script>
+const loveMessages = [
+  "I'm so happy that you're part of my life. ♡",
+  "Please remember that you deserve love and kindness, too.",
+  "I'm proud of you, even for the little things you do.",
+  "I hope something makes you smile today, my love. 💗",
+  "You make ordinary conversations feel special.",
+  "You don't have to be perfect to be appreciated.",
+  "I hope you always make time to rest and take care of yourself.",
+  "Thank you for sharing little pieces of your world with me.",
+  "I'm grateful for the memories we're making together.",
+  "Even on busy days, I hope you remember to be gentle with yourself.",
+  "You have so many reasons to be proud of yourself.",
+  "I'm excited for all the little memories we have yet to make. ♡",
+  "You deserve to feel appreciated for who you are.",
+  "Thank you for being someone I get to know more every day.",
+  "Happy first monthsary, my love! Here's to more memories together. 💗"
+];
+
+function newLoveMessage() {
+  const randomIndex = Math.floor(Math.random() * loveMessages.length);
+
+  document.getElementById("love-message").textContent =
+    loveMessages[randomIndex];
+}
+</script>
+
+<!-- OUR LITTLE DICTIONARY ♡ -->
+<section id="our-dictionary">
+
+  <h2 class="section-title">OUR LITTLE DICTIONARY ♡</h2>
+
+  <p style="text-align:center; margin-bottom:25px;">
+    Some words have a special meaning when they're about us. 💗
+  </p>
+
+  <div class="card">
+    <h3>♡ Langga</h3>
+    <p>A little word filled with so much love and affection.</p>
+  </div>
+
+  <div class="card">
+    <h3>♡ My Favorite Person</h3>
+    <p>The person I love sharing my random stories, thoughts, and little moments with.</p>
+  </div>
+
+  <div class="card">
+    <h3>♡ Home</h3>
+    <p>Not always a place, but a feeling of comfort, warmth, and being understood.</p>
+  </div>
+
+  <div class="card">
+    <h3>♡ Us</h3>
+    <p>Two people learning about each other, growing together, and making memories one day at a time.</p>
+  </div>
+
+  <div class="card">
+    <h3>♡ Little Things</h3>
+    <p>The small messages, random conversations, and simple moments that mean more to me than you know.</p>
+  </div>
+
+  <div class="card">
+    <h3>♡ Monthsary</h3>
+    <p>A little celebration of the time we've shared and the memories we still have to make.</p>
+  </div>
+
+  <div class="card">
+    <h3>♡ My Love</h3>
+    <p>One of my favorite ways to remind you that you have a special place in my heart.</p>
+  </div>
+</section>
+<!-- ONE LAST LETTER ♡ -->
+<section id="last-letter">
+
+  <h2 class="section-title">ONE LAST LETTER ♡</h2>
+
+  <div class="card" style="text-align:center;">
+
+    <p style="font-size:35px; margin-bottom:15px;">
+      💌
+    </p>
+
+    <h3>To my honeybunch, my love ♡</h3>
+
+    <p style="margin-top:20px; text-align:left;">
+
+      Hi, my love. ♡
+
+      <br><br>
+
+      If you've reached this part of my little website, I hope you've smiled at least once while exploring everything I made for you.
+
+      <br><br>
+
+      I wanted to give you something that feels personal, something that holds little pieces of my heart. That's why I put together these songs, messages, and little reminders. Each part may be simple, but I made it with you in mind.
+
+      <br><br>
+
+      Thank you for being someone I get to share my days with. I appreciate our conversations, our little moments, and the opportunity to keep learning about each other. I know we both have responsibilities, busy days, and things to figure out, but I hope we continue to make room for understanding, patience, and genuine care.
+
+      <br><br>
+
+      I don't expect us to be perfect. I just hope we continue choosing honesty, communicating when something bothers us, and appreciating the little things we do for each other.
+
+      <br><br>
+
+      Happy first monthsary, my love! ♡ I'm grateful for the memories we've made so far, and I'm looking forward to the moments we have yet to share. I hope this little gift reminds you that someone is happy to have you in her life.
+
+      <br><br>
+
+      Always take care of yourself, okay? Eat on time, get enough rest, and don't forget to give yourself credit for the things you do.
+
+      <br><br>
+
+      I made this little corner of the internet for you, but the feelings behind it are much bigger than a website could ever show.
+
+      <br><br>
+
+      <strong>Happy first monthsary, my honeybunch. I hope this is one of many little celebrations we'll get to share. ♡</strong>
+
+      <br><br>
+
+      With so much love,<br>
+      Your girl. 💗
+
+    </p>
+
+    <p style="margin-top:25px; font-size:25px;">
+      ♡ ♡ ♡
+    </p>
+
+  </div>
+
+</section>
+</body>
+</html>
